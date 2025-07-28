@@ -1,5 +1,3 @@
-![PyViolinSheet Screenshot](screenshots/1.png)
-
 # Welcome to PyViolinSheet!
 
 PyViolinSheet is a simple and lightweight personal project designed to help learn violin notes. Because it is designed to be simple and easy to use, you can also run it on your mobile device using appropriate interpreters.
@@ -11,6 +9,8 @@ The note names correspond to the filenames of the images shown, which are stored
 PyViolinSheet aims to provide a straightforward and practical tool for practicing note recognition and violin string positioning in an interactive learning environment.
 
 >This is a personal project and the developer does not intend to add advanced or complex patches to it and tries to develop this software under the Unix philosophy.
+
+![PyViolinSheet Screenshot](screenshots/1.png)
 
 
 # How to use ?
