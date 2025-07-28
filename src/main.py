@@ -17,9 +17,15 @@ from tkinter import *
 from PIL import Image, ImageTk
 import random
 import os
+import sys
 
-def myrandom (mylist):
-    if not mylist: return None
+
+def errorfunc ():
+    print ("A problem occurred. Is the contents of the Images folder empty?")
+    sys.exit (-1)
+
+def myrandom ( mylist ): # This function returns a random element from a list such that no element is repeated consecutively.
+    if not mylist: errorfunc()
     if not hasattr(myrandom, "previous"):   myrandom.previous = None
     choices = [item for item in mylist if item != myrandom.previous]
     choice = random.choice(choices)
