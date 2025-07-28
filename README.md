@@ -17,6 +17,7 @@ PyViolinSheet aims to provide a straightforward and practical tool for practicin
 Running the software is very simple and requires no installation. You only need to install the following libraries for your **Python3** interpreter:
 
 -   **tkinter**
+
 To install it on Linux operating systems, you must use your distribution's package manager. 
 Here we show how to install it for a number of popular Linux distributions.
 
@@ -33,10 +34,11 @@ sudo apt-get install python3-tk
 
 
 -   **pillow**
-    To install Pillow, you just need to use pip.
-    ```bash
-    python3 -m pip install Pillow
-    ```
+
+To install Pillow, you just need to use pip.
+```bash
+python3 -m pip install Pillow
+```
 
 Then, download the source code of the software, open your terminal in the same directory as the `main.py` file, and run the following command:
 
