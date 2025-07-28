@@ -21,18 +21,24 @@ import sys
 
 
 def errorfunc ():
-    print ("A problem occurred. Is the contents of the Images folder empty?")
-    sys.exit (-1)
+    print ( "A problem occurred. Is the contents of the Images folder empty?" )
+    sys.exit ( -1 )
 
 def myrandom ( mylist ): # This function returns a random element from a list such that no element is repeated consecutively.
-    if not mylist: errorfunc()
-    if not hasattr(myrandom, "previous"):   myrandom.previous = None
-    choices = [item for item in mylist if item != myrandom.previous]
-    choice = random.choice(choices)
+    if not mylist: errorfunc ()
+    if not hasattr ( myrandom, "previous" ):   myrandom.previous = None
+    choices = [ item for item in mylist if item != myrandom.previous ]
+    choice  = random . choice ( choices )
     myrandom.previous = choice
     return choice
 
-page = Tk ()
-page . title ("Py Violin Sheet - Version 0.0.1")
+page  = Tk ()
+page  . title ("Py Violin Sheet - Version 0.0.1")
 
-page.mainloop()
+imlbl = Label(page)
+imlbl . pack ()
+
+imlbl = Label ( page, font = ( "Arial", 30 ) )
+imlbl . pack ()
+
+page  . mainloop ()
