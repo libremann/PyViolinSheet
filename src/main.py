@@ -56,7 +56,7 @@ def update_image():
     page.after ( 4000, update_image ) # 4 Secounds to show a new random image!
 
 page  = Tk ()
-page  . title ("Py Violin Sheet - Version 0.0.1")
+page  . title ("Py Violin Sheet - Beta")
 
 imlbl = Label ( page )
 imlbl . pack ()
