@@ -14,7 +14,17 @@
 # along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 from tkinter import *
+from PIL import Image, ImageTk
+import random
+import os
 
+def myrandom (mylist):
+    if not mylist: return None
+    if not hasattr(myrandom, "previous"):   myrandom.previous = None
+    choices = [item for item in mylist if item != myrandom.previous]
+    choice = random.choice(choices)
+    myrandom.previous = choice
+    return choice
 
 page = Tk ()
 page . title ("Py Violin Sheet - Version 0.0.1")
