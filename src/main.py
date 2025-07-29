@@ -53,7 +53,7 @@ def update_image ():
 
 
 page  = Tk ()
-page  . title ( "Py Violin Sheet - Beta" )
+page  . title ( "Py Violin Sheet - Alpha" )
 page  . config ( bg = "white" )
 page  . resizable ( False, False )
 
