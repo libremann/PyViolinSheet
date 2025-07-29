@@ -10,7 +10,7 @@ PyViolinSheet aims to provide a straightforward and practical tool for practicin
 
 >This is a personal project and the developer does not intend to add advanced or complex patches to it and tries to develop this software under the Unix philosophy.
 
-![PyViolinSheet Screenshot](screenshots/1.png)
+![PyViolinSheet Screenshot](screenshots/Alpha-two.png)
 
 
 # How to use ?
