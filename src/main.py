@@ -19,9 +19,12 @@ import random
 import os
 import sys
 
-image_folder = "./Images"
+image_names_1 = [f for f in os.listdir("./Images/1") if f.lower().endswith(".png")] # Create a list from the image files name
+image_names_2 = [f for f in os.listdir("./Images/2") if f.lower().endswith(".png")] # Create a list from the image files name
+image_names_3 = [f for f in os.listdir("./Images/3") if f.lower().endswith(".png")] # Create a list from the image files name
+image_names_4 = [f for f in os.listdir("./Images/4") if f.lower().endswith(".png")] # Create a list from the image files name
 
-image_names = [f for f in os.listdir(image_folder) if f.lower().endswith(".png")] # Create a list from the image files name
+image_names = image_names_1 + image_names_2 + image_names_3 + image_names_4 # This is temporary and can be changed.
 
 
 def errorfunc ():
@@ -42,7 +45,7 @@ def myrandom ( mylist ): # This function returns a random element from a list su
 
 def update_image():
     FP = myrandom ( image_names ) # Get a random image 
-    img_path = os.path.join ( image_folder, FP )
+    img_path = os.path.join(("Images/"+FP[1]), FP)
 
     img = Image.open ( img_path )
     img = img.resize ( ( 400, 300 ) )
@@ -51,7 +54,7 @@ def update_image():
     imlbl.config ( image = tk_img )
     imlbl.image = tk_img
  
-    txtlbl.config ( text = os.path.splitext ( FP )[0] )
+    txtlbl.config(text=os.path.splitext(FP)[0])
 
     page.after ( 4000, update_image ) # 4 Secounds to show a new random image!
 
@@ -61,7 +64,7 @@ page  . title ("Py Violin Sheet - Beta")
 imlbl = Label ( page )
 imlbl . pack ()
 
-txtlbl = Label ( page, font = ( "Arial", 30 ) )
+txtlbl = Label(page, font=("Arial", 30), fg="black")
 txtlbl . pack ()
 
 update_image ()
