@@ -50,7 +50,7 @@ python3 main.py
 # How can you help the project or me?
 Simply clone the project and enhance it by adding advanced features. Or, just give me a star! You can also simply download and use the project, which would make me very happy.
 
-*Mehdi Hosseini Asad*
+*Mahdi Hosseini Asaad*
 
 
 
